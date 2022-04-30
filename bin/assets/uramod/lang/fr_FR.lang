@@ -1,0 +1,21 @@
+item.uranium_ingot.name=L'ingot d'uranium
+item.stick_uranium.name=Bâton d'uranium
+item.uranium_pickaxe.name=Pioche d'uranium
+item.uranium_sword.name=épé d'uranium
+item.uranium_axe.name=Hache en Uranium
+item.uranium_shovel.name=Pelle en Uranium
+item.helmet_uranium.name=Casque en Uranium
+item.leggins_uranium.name=Jambière en Uranium
+item.chestplate_uranium.name=Plastron en Uranium
+item.boot_uranium.name=Botte en Uranium
+item.noctanium_ingot.name=L'ingot de noctanium
+item.titan_ingot.name=L'ingot de titan
+
+tile.uranium_ore.name=Minerais d'uranium
+tile.uranium_block.name=Block d'uranium
+tile.noctanium_ore.name=Minerais de noctanium
+tile.noctanium_block.name=Block de noctanium
+tile.titan_ore.name=Minerais de titan
+
+itemGroup.UraMod=UraMod
+itemGroup.UraArmor=UraArmure

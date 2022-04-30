@@ -1,0 +1,16 @@
+[
+{
+  "modid": "uramod",
+  "name": "UraniumMod",
+  "description": "Mod pour Uranium Server",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "http://uranium-pvp.me",
+  "updateUrl": "",
+  "authorList": ["Proxi"],
+  "credits": "Credit Uranium",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

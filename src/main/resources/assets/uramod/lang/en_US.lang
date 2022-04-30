@@ -1,0 +1,21 @@
+item.uranium_ingot.name=uranium ingot
+item.stick_uranium.name=stick d'uranium
+item.uranium_pickaxe.name=uranium pickaxe
+item.uranium_axe.name=uranium axe
+item.uranium_sword.name=uranium sword
+item.uranium_shovel.name=uranium shovel
+item.helmet_uranium.name=uranium helmet
+item.leggins_uranium.name=helmet leggins
+item.chestplate_uranium.name=uranium chestplate
+item.boot_uranium.name=uranium boot
+item.noctanium_ingot.name=noctanium ingot
+item.titan_ingot.name=Titan Ingot
+
+tile.uranium_ore.name=Ore Uranium
+tile.uranium_block.name=Uranium Block
+tile.noctanium_ore.name=noctanium ore
+tile.noctanium_block.name=noctanium block
+tile.titan_ore.name=Titan Ore
+
+itemGroup.UraMod=UraMod
+itemGroup.UraArmor=UraArmor
