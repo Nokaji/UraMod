@@ -1,20 +1,54 @@
-item.uranium_ingot.name=L'ingot d'uranium
-item.stick_uranium.name=Bâton d'uranium
-item.uranium_pickaxe.name=Pioche d'uranium
-item.uranium_sword.name=épé d'uranium
+item.uranium_ingot.name=Lingot en Uranium
+item.uranium_stick.name=Bâton en Uranium
+item.uranium_pickaxe.name=Pioche en Uranium
+item.uranium_sword.name=Épée en Uranium
 item.uranium_axe.name=Hache en Uranium
 item.uranium_shovel.name=Pelle en Uranium
-item.helmet_uranium.name=Casque en Uranium
-item.leggins_uranium.name=Jambière en Uranium
-item.chestplate_uranium.name=Plastron en Uranium
-item.boot_uranium.name=Botte en Uranium
-item.noctanium_ingot.name=L'ingot de noctanium
-item.titan_ingot.name=L'ingot de titan
+item.uranium_helmet.name=Casque en Uranium
+item.uranium_leggins.name=Jambière en Uranium
+item.uranium_chestplate.name=Plastron en Uranium
+item.uranium_boot.name=Botte en Uranium
+item.uranium_hammer.name=Marteau en Uranium
+item.uranium_apple.name=Pomme en Uranium
+item.uranium_bow.name=Arc en Uranium
+item.uranium_nuggets.name=Pépite en Uranium
+item.uranium_core.name=Coeur en Uranium
+item.uranium_core_frag.name=Fargment de Coeur en Uranium
+item.uranium_key.name=Clé en Uranium
+
+item.titan_ingot.name=Lingot de Titan
+item.titan_helmet.name=Casque en Titan
+item.titan_chestplate.name=Plastron en Titan
+item.titan_leggins.name=Jambière en Titan
+item.titan_boot.name=Botte en Titan
+item.titan_sword.name=Épée en Titan
+item.titan_pickaxe.name=Pioche en Titan
+item.titan_shovel.name=Pelle en Titan
+item.titan_axe.name=Hache en Titan
+item.titan_hammer.name=Marteau en Titan
+
+item.noctanium_ingot.name=Lingot de Noctanium
+item.noctanium_helmet.name=Casque en Noctanium
+item.noctanium_chestplate.name=Plastron en Noctanium
+item.noctanium_leggins.name=Jambière en Noctanium
+item.noctanium_boot.name=Botte en Noctanium
+item.noctanium_sword.name=Épée en Noctanium
+item.noctanium_pickaxe.name=Pioche en Noctanium
+item.noctanium_axe.name=Hache en Noctanium
+item.noctanium_shovel.name=Pelle en Noctanium
+item.noctanium_hammer.name=Marteau en Noctanium
+item.noctanium_key.name=Clé en Noctanium
+
+item.pickaxe_staff_of_power.name=Pioche du Pouvoir
+item.unclaim_finder.name=Unclaim Finder
+item.key_legendary.name=Clé Légendaire
 
 tile.uranium_ore.name=Minerais d'uranium
 tile.uranium_block.name=Block d'uranium
+
 tile.noctanium_ore.name=Minerais de noctanium
 tile.noctanium_block.name=Block de noctanium
+
 tile.titan_ore.name=Minerais de titan
 
 itemGroup.UraMod=UraMod
