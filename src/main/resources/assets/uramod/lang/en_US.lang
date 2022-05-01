@@ -1,21 +1,56 @@
-item.uranium_ingot.name=uranium ingot
-item.stick_uranium.name=stick d'uranium
-item.uranium_pickaxe.name=uranium pickaxe
-item.uranium_axe.name=uranium axe
-item.uranium_sword.name=uranium sword
-item.uranium_shovel.name=uranium shovel
-item.helmet_uranium.name=uranium helmet
-item.leggins_uranium.name=helmet leggins
-item.chestplate_uranium.name=uranium chestplate
-item.boot_uranium.name=uranium boot
-item.noctanium_ingot.name=noctanium ingot
-item.titan_ingot.name=Titan Ingot
+item.uranium_ingot.name=Uranium ingot
+item.uranium_stick.name=Uranium stick
+item.uranium_pickaxe.name=Uranium pickaxe
+item.uranium_axe.name=Uranium axe
+item.uranium_sword.name=Uranium sword
+item.uranium_shovel.name=Uranium shovel
+item.uranium_helmet.name=Uranium helmet
+item.uranium_leggins.name=Uranium leggins
+item.uranium_chestplate.name=Uranium chestplate
+item.uranium_boot.name=Uranium boot
+item.uranium_hammer.name=Hammer Uranium
+item.uranium_apple.name=Apple Uranium
+item.uranium_bow.name=Uranium Bow
+item.uranium_nuggets.name=Uranium Nuggets
+item.uranium_core.name=Uranium Heart
+item.uranium_core_frag.name=Uranium Heart Fragment
+item.uranium_key.name=Uranium Key
 
-tile.uranium_ore.name=Ore Uranium
-tile.uranium_block.name=Uranium Block
-tile.noctanium_ore.name=noctanium ore
-tile.noctanium_block.name=noctanium block
-tile.titan_ore.name=Titan Ore
+item.noctanium_ingot.name=Noctanium ingot
+item.noctanium_helmet.name=Noctanium helmet
+item.noctanium_chestplate.name=Noctanium chestplate
+item.noctanium_leggins.name=Noctanium leggins
+item.noctanium_boot.name=Noctanium boot
+item.noctanium_sword.name=Noctanium sword
+item.noctanium_pickaxe.name=Noctanium pickaxe
+item.noctanium_axe.name=Noctanium axe
+item.noctanium_shovel.name=Noctanium shovel
+item.noctanium_hammer.name=Noctanium Hammer
+item.noctanium_key.name=Noctanium Key
+
+item.titan_ingot.name=Titan Ingot
+item.titan_helmet.name=Titan helmet
+item.titan_chestplate.name=Titan chestplate
+item.titan_leggins.name=Titan leggins
+item.titan_boot.name=Titan boot
+item.titan_sword.name=Titan sword
+item.titan_pickaxe.name=Titan pickaxe
+item.titan_shovel.name=Titan shovel
+item.titan_axe.name=Titan axe
+item.titan_hammer.name=Titan hammer
+
+item.pickaxe_staff_of_power.name= Pickaxe Staff Of Power
+item.unclaim_finder.name=Unclaim Finder
+item.key_legendary.name=Key Légendary
+
+tile.uranium_ore.name=Uranium ore
+tile.uranium_block.name=Uranium block
+
+tile.noctanium_ore.name=Noctanium ore
+tile.noctanium_block.name=Noctanium block
+
+tile.titan_ore.name=Titan ore
+tile.titan_block.name=Titan block
 
 itemGroup.UraMod=UraMod
 itemGroup.UraArmor=UraArmor

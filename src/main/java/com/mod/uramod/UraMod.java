@@ -1,17 +1,27 @@
 package com.mod.uramod;
 
 import com.mod.uramod.init.BlockMod;
+import com.mod.uramod.init.CraftMod;
 import com.mod.uramod.init.ItemMod;
+import com.mod.uramod.init.SmeltingMod;
 import com.mod.uramod.proxy.CommonProxy;
+import com.mod.uramod.proxy.client.GuiCustomMainMenu;
 import com.mod.uramod.world.WorldRegister;
+
+import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.common.gameevent.TickEvent;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiMainMenu;
+import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.world.gen.feature.WorldGenMinable;
@@ -34,7 +44,7 @@ public class UraMod
         @SideOnly(Side.CLIENT)
         public Item getTabIconItem()
         {
-            return ItemMod.helmet_uranium;
+            return ItemMod.uranium_chestplate;
         }
     };
     
@@ -46,15 +56,26 @@ public class UraMod
         BlockMod.init();
         BlockMod.register();
         WorldRegister.MainRegstry();
+        CraftMod.register();
+        SmeltingMod.register();
     }
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
         proxy.registerRenders();
+        proxy.registerOverlay();
     }
     @EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
         
+    }
+    
+    @SubscribeEvent
+    @SideOnly(Side.CLIENT)
+    public void onTick(TickEvent.ClientTickEvent event) {
+      Minecraft mc = FMLClientHandler.instance().getClient();
+      if (mc.currentScreen != null && mc.currentScreen.getClass().equals(GuiMainMenu.class))
+        mc.displayGuiScreen((GuiScreen)new GuiCustomMainMenu()); 
     }
 }
