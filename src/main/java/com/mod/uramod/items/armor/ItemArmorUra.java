@@ -13,7 +13,6 @@ import net.minecraft.world.World;
 
 public class ItemArmorUra extends ItemArmor
 {
-
 	public ItemArmorUra(ItemArmor.ArmorMaterial material, int metadata) {
 	    super(material, 0, metadata);
 	  }
@@ -27,8 +26,8 @@ public class ItemArmorUra extends ItemArmor
 	  }
 	  
 	  public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
-	    if (this == ItemMod.uranium_helmet)
-	      player.addPotionEffect(new PotionEffect(Potion.nightVision.getId(), 660, 0)); 
+		if (this == ItemMod.uranium_helmet)
+		  player.addPotionEffect(new PotionEffect(Potion.nightVision.getId(), 660, 0));
 	    if (this == ItemMod.uranium_chestplate)
 	      player.addPotionEffect(new PotionEffect(Potion.damageBoost.getId(), 660, 0)); 
 	    if (this == ItemMod.uranium_leggins)

@@ -2,13 +2,13 @@
 {
   "modid": "uramod",
   "name": "UraniumMod",
-  "description": "Mod pour Uranium Server",
+  "description": "Mod pour HelloSky Server",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "http://uranium-pvp.me",
+  "url": "http://hellosky.yvleis.fr",
   "updateUrl": "",
-  "authorList": ["Proxi"],
-  "credits": "Credit Uranium",
+  "authorList": ["Nokaji"],
+  "credits": "Credit HelloSky",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

@@ -91,7 +91,7 @@ public class GuiCustomMainMenu extends GuiScreen implements GuiYesNoCallback {
   
   public GuiCustomMainMenu() {
     this.field_146972_A = field_96138_a;
-    this.splashText = "UraniumV1";
+    this.splashText = "HelloSkyV4";
     BufferedReader bufferedreader = null;
     try {
       ArrayList<String> arraylist = new ArrayList();
@@ -210,12 +210,12 @@ public class GuiCustomMainMenu extends GuiScreen implements GuiYesNoCallback {
       } 
     } 
     if (button.id == 20)
-      FMLClientHandler.instance().connectToServerAtStartup("uranium.yvleis.fr", 25565); 
+      FMLClientHandler.instance().connectToServerAtStartup("yvleis.fr", 25565); 
     if (button.id == 21)
       try {
         Class<?> oclass = Class.forName("java.awt.Desktop");
         Object object = oclass.getMethod("getDesktop", new Class[0]).invoke(null, new Object[0]);
-        oclass.getMethod("browse", new Class[] { URI.class }).invoke(object, new Object[] { new URI("https://uranium.yvleis.fr") });
+        oclass.getMethod("browse", new Class[] { URI.class }).invoke(object, new Object[] { new URI("https://hellosky.yvleis.fr") });
       } catch (Throwable throwable) {
         logger.error("Couldn't open link", throwable);
       }  
@@ -223,7 +223,7 @@ public class GuiCustomMainMenu extends GuiScreen implements GuiYesNoCallback {
       try {
         Class<?> oclass = Class.forName("java.awt.Desktop");
         Object object = oclass.getMethod("getDesktop", new Class[0]).invoke(null, new Object[0]);
-        oclass.getMethod("browse", new Class[] { URI.class }).invoke(object, new Object[] { new URI("https://uranium.yvleis.fr/shop") });
+        oclass.getMethod("browse", new Class[] { URI.class }).invoke(object, new Object[] { new URI("https://hellosky.yvleis.fr/shop") });
       } catch (Throwable throwable) {
         logger.error("Couldn't open link", throwable);
       }  
@@ -359,7 +359,7 @@ public class GuiCustomMainMenu extends GuiScreen implements GuiYesNoCallback {
   }
   
   public void drawScreen(int x, int y, float partialTick) {
-    Display.setTitle("UraniumV1 | " + this.mc.getSession().getUsername());
+    Display.setTitle("HelloSkyV4 | " + this.mc.getSession().getUsername());
     GL11.glDisable(3008);
     renderBackGround();
     GL11.glEnable(3008);
@@ -390,7 +390,7 @@ public class GuiCustomMainMenu extends GuiScreen implements GuiYesNoCallback {
     GL11.glScalef(f1, f1, f1);
     drawCenteredString(this.fontRendererObj, this.splashText, 0, -8, -256);
     GL11.glPopMatrix();
-    String s = "Uranium V1";
+    String s = "HelloSky V4";
     if (this.mc.isDemo())
       s = s + " Demo"; 
     List<String> brandings = Lists.reverse(FMLCommonHandler.instance().getBrandings(true));
@@ -399,7 +399,7 @@ public class GuiCustomMainMenu extends GuiScreen implements GuiYesNoCallback {
       if (!Strings.isNullOrEmpty(brd))
         drawString(this.fontRendererObj, brd, 2, this.height - 10 + i * (this.fontRendererObj.FONT_HEIGHT + 1), 16777215); 
     } 
-    String s1 = "Copyright Uranium V1 - Mojang AB.";
+    String s1 = "Copyright HelloSky V4 - Mojang AB.";
     drawString(this.fontRendererObj, s1, this.width - this.fontRendererObj.getStringWidth(s1) - 2, this.height - 10, -1);
     if (this.field_92025_p != null && this.field_92025_p.length() > 0) {
       drawRect(this.field_92022_t - 2, this.field_92021_u - 2, this.field_92020_v + 2, this.field_92019_w - 1, 1428160512);

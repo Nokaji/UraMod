@@ -1,14 +1,18 @@
 package com.mod.uramod;
 
+import org.lwjgl.opengl.Display;
+
 import com.mod.uramod.init.BlockMod;
 import com.mod.uramod.init.CraftMod;
 import com.mod.uramod.init.ItemMod;
 import com.mod.uramod.init.SmeltingMod;
 import com.mod.uramod.proxy.CommonProxy;
+import com.mod.uramod.proxy.client.CustomInGameMenu;
 import com.mod.uramod.proxy.client.GuiCustomMainMenu;
 import com.mod.uramod.world.WorldRegister;
 
 import cpw.mods.fml.client.FMLClientHandler;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
@@ -64,18 +68,19 @@ public class UraMod
     {
         proxy.registerRenders();
         proxy.registerOverlay();
+        if (event.getSide().isClient()){
+            FMLCommonHandler.instance().bus().register(this); 
+        }
     }
     @EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
         
     }
-    
     @SubscribeEvent
     @SideOnly(Side.CLIENT)
     public void onTick(TickEvent.ClientTickEvent event) {
       Minecraft mc = FMLClientHandler.instance().getClient();
-      if (mc.currentScreen != null && mc.currentScreen.getClass().equals(GuiMainMenu.class))
-        mc.displayGuiScreen((GuiScreen)new GuiCustomMainMenu()); 
+      Display.setTitle("HelloSkyV4 | " + mc.getSession().getUsername());
     }
 }
