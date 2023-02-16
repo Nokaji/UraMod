@@ -1,3 +1,96 @@
+# Commands
+
+For execute command you have need a window power shell
+
+Shift + Click Right In your Explorer Files
+
+| Platform                     | Command                          |
+| ---------------------------- | -------------------------------- |
+| Show all commands            | `./gradlew task`                 |
+| Prepare Your Workspace       | `./gradlew setupDecompWorkspace` |
+| Environment on eclipse       | `./gradlew eclipse`              |
+| Environment on IntelliJ IDEA | `./gradlew idea`                 |
+| Compile into java file       | `./gradlew build`                |
+
+if there has a problem download :
+<a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.7.10-10.13.4.1614-1.7.10/forge-1.7.10-10.13.4.1614-1.7.10-src.zip">Forge src - 1.7.10(1614)</a>
+
+and redone the installation with commands :
+- `./gradlew task`
+- `./gradlew setupDecompWorkspace`
+- `./gradlew eclipse or idea`
+When you have finish prepare the file build.gradle like that :
+
+```gradle
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            name = "forge"
+            url = "http://files.minecraftforge.net/maven"
+        }
+        maven {
+            name = "sonatype"
+            url = "https://oss.sonatype.org/content/repositories/snapshots/"
+        }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+    }
+}
+
+apply plugin: 'forge'
+
+version = "1.0"
+group= "com.mod.uramod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "uramod"
+
+minecraft {
+    version = "1.7.10-10.13.4.1614-1.7.10"
+    runDir = "eclipse"
+}
+
+dependencies {
+    // you may put jars on which you depend on in ./libs
+    // or you may define them like so..
+    //compile "some.group:artifact:version:classifier"
+    //compile "some.group:artifact:version"
+      
+    // real examples
+    //compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
+    //compile 'com.googlecode.efficient-java-matrix-library:ejml:0.24' // adds ejml to the dev env
+
+    // for more info...
+    // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
+    // http://www.gradle.org/docs/current/userguide/dependency_management.html
+
+}
+
+processResources
+{
+    // this will ensure that this task is redone when the versions change.
+    inputs.property "version", project.version
+    inputs.property "mcversion", project.minecraft.version
+
+    // replace stuff in mcmod.info, nothing else
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+                
+        // replace version and mcversion
+        expand 'version':project.version, 'mcversion':project.minecraft.version
+    }
+        
+    // copy everything else, thats not the mcmod.info
+    from(sourceSets.main.resources.srcDirs) {
+        exclude 'mcmod.info'
+    }
+}
+
+```
+
+and execute command `./gradlew build`
+
+# For More Help
 -------------------------------------------
 Source installation information for modders
 -------------------------------------------
