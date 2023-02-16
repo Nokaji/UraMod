@@ -15,6 +15,16 @@ Shift + Click Right In your Explorer Files
 if there has a problem download :
 <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.7.10-10.13.4.1614-1.7.10/forge-1.7.10-10.13.4.1614-1.7.10-src.zip">Forge src - 1.7.10(1614)</a>
 
+edit the files `gradle\wrapper\gradle-wrapper.properties` :
+```properties
+distributionBase=GRADLE_USER_HOME
+distributionPath=wrapper/dists
+# Distribution in default is "https\://services.gradle.org/distributions/gradle-2.0-bin.zip" the file .zip is obsolete remplace the 2.0 -> 2.6
+distributionUrl=https\://services.gradle.org/distributions/gradle-2.6-bin.zip
+zipStoreBase=GRADLE_USER_HOME
+zipStorePath=wrapper/dists
+```
+
 and redone the installation with commands :
 - `./gradlew task`
 - `./gradlew setupDecompWorkspace`
